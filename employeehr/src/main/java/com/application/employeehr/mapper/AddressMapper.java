@@ -1,6 +1,5 @@
 package com.application.employeehr.mapper;
 
-import com.application.employeehr.client.request.CreateEmployeeRequest;
 import com.application.employeehr.client.response.AddressDto;
 import com.application.employeehr.model.Address;
 import org.mapstruct.Mapper;

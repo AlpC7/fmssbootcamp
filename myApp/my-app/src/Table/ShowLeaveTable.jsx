@@ -20,7 +20,7 @@ export default class ShowEmployeeTable extends Component {
     
     componentDidMount() {
         debugger
-        fetch("/api/v1/leaves")       //https://raw.githubusercontent.com/aspsnippets/test/master/Customers.json
+        fetch("/api/v1/leaves")       
         .then(res => res.json())
         .then(
             (leave) => {
@@ -46,9 +46,7 @@ leaveDeleteFetch(leaveId) {
   render() {
     return (
         <>
-    {/* <Button onClick={() => {
-  this.componentDidMount();
-  }}> Calisanlari Goster</Button> */}
+  
     
     <Table bordered
   dark

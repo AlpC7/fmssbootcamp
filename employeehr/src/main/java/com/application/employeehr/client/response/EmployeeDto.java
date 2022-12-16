@@ -1,17 +1,11 @@
 package com.application.employeehr.client.response;
 
-import com.application.employeehr.model.Employee;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.CascadeType;
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
 import java.time.LocalDate;
-import java.util.Set;
 
 @Getter
 @Setter

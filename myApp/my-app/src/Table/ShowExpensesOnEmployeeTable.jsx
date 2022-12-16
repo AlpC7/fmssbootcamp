@@ -20,7 +20,7 @@ export default class ShowEmployeeTable extends Component {
     componentDidMount() {
         debugger
         const fetchMap = "/api/v1/expenses/employee/"+this.props.employeeId.id
-        fetch(fetchMap)       //https://raw.githubusercontent.com/aspsnippets/test/master/Customers.json
+        fetch(fetchMap)      
         .then(res => res.json())
         .then(
             (expense) => {

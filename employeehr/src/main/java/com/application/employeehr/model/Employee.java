@@ -50,7 +50,6 @@ public class Employee{
     @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     public Set<Expenses> employeeExpensesId;
 
-  //  public Address addresses;
     @OneToOne(mappedBy = "employee", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     public Address employeeAddressId;
 

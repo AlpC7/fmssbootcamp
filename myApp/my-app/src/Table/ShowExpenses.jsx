@@ -19,7 +19,7 @@ export default class ShowEmployeeTable extends Component {
     
     componentDidMount() {
         debugger
-        fetch("/api/v1/expenses")       //https://raw.githubusercontent.com/aspsnippets/test/master/Customers.json
+        fetch("/api/v1/expenses")       
         .then(res => res.json())
         .then(
             (expense) => {

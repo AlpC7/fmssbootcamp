@@ -1,28 +1,15 @@
 import React, { Component } from 'react'
 import { Col, Container, Row } from 'reactstrap';
-import Main from '../Modals/EmployeeAdd';
-//import Table from '../Table'
-import Table from '../Table/UserTable';
 import {Input} from 'reactstrap'
 import {FormText,Form,FormGroup,Label} from 'reactstrap'
 import {Button} from 'reactstrap'
-import App from '../App';
-
 import InputField from '../FormElement/InputField';
-import RadioFieldGroup from '../FormElement/RadioFieldGroup';
-import CheckboxFieldGroup from '../FormElement/CheckboxFieldGroup';
-import DropdownField from '../FormElement/DropdownField';
-import { Alert } from 'reactstrap';
-import ModalPopup from '../FormElement/ModalPopup';
-//import React from 'react';
-import Select from 'react-select';
-
-import {Nav, Modal,ModalBody,ModalHeader,ModalFooter} from 'reactstrap';
 
 
 
 
 export default class Employee extends Component {
+
   data ={  
     firstName: '',
     lastName:'',
@@ -41,10 +28,6 @@ export default class Employee extends Component {
       country: '',
       phone: '',
       zipCode: '',
-
-    
-    
-    
   }
  
   initialState= {
@@ -152,17 +135,11 @@ constructor(props) {
  
   
   handleChange = (selectedOption) => {
-   // this.setState({ selectedOption });
    debugger
    this.state.level = selectedOption.target.value;
-   //selectedOption.preventDefault();
-  // this.setState((selectedOption) => ({
-  //   level: val,
-   //}));
   }
 
   async sendEmployee(postdata) {
-    // POST request using fetch with async/await
     debugger
 
 
@@ -174,7 +151,6 @@ constructor(props) {
     const response = await fetch('/api/v1/employees/', requestOptions);
     debugger
    const data = await response.json();
-    // this.setState({ responseError: data });
     if(response.ok==false)
       alert(JSON.stringify(data))
       if(response.ok==true)
@@ -335,8 +311,6 @@ constructor(props) {
     </Row>
     <Row>
       <Col><Button block color="primary" outline onClick={this.setAllEmployee}>  SAVE </Button></Col>
-      {/* <Col><Button block color="primary" outline onClick={()=> alert("Güncellendi!")}>  Güncelle </Button></Col>
-      <Col><Button block color="primary" outline onClick={()=> alert("Silindi!")}>  Sil </Button></Col> */}
     </Row>
   </Form>
       

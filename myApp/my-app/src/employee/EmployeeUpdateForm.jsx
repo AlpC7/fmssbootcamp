@@ -1,32 +1,10 @@
 import React, { Component } from 'react'
 import { Col, Container, Row } from 'reactstrap';
-import Main from '../Modals/EmployeeAdd';
-//import Table from '../Table'
-import Table from '../Table/UserTable';
 import {Input} from 'reactstrap'
 import {FormText,Form,FormGroup,Label} from 'reactstrap'
 import {Button} from 'reactstrap'
-import App from '../App';
 
 import InputField from '../FormElement/InputField';
-import RadioFieldGroup from '../FormElement/RadioFieldGroup';
-import CheckboxFieldGroup from '../FormElement/CheckboxFieldGroup';
-import DropdownField from '../FormElement/DropdownField';
-import { Alert } from 'reactstrap';
-import ModalPopup from '../FormElement/ModalPopup';
-//import React from 'react';
-import Select from 'react-select';
-import ShowEmployeeTable from '../Table/ShowEmployeeTable';
-
-import {Nav, Modal,ModalBody,ModalHeader,ModalFooter} from 'reactstrap';
-
-import {useState} from 'react'
-// const options = [
-//   { value: 'blues', label: 'Blues' },
-//   { value: 'rock', label: 'Rock' },
-//   { value: 'jazz', label: 'Jazz' },
-//   { value: 'orchestra', label: 'Orchestra' } 
-// ];
 
 
 export default class EmployeeUpdateForm extends Component {
@@ -85,8 +63,6 @@ export default class EmployeeUpdateForm extends Component {
 constructor(props) {
   super(props);
   debugger
- // let x=ShowEmployeeTable.Trigger();
-  // let info=ShowEmployeeTable.info
   this.state = this.initialState;
   this.propArray = this.props.employeeId
 }
@@ -231,13 +207,8 @@ constructor(props) {
  
   
   handleChange = (selectedOption) => {
-   // this.setState({ selectedOption });
    debugger
    this.state.level = selectedOption.target.value;
-   //selectedOption.preventDefault();
-  // this.setState((selectedOption) => ({
-  //   level: val,
-   //}));
   }
 
   async sendEmployee(postdata) {

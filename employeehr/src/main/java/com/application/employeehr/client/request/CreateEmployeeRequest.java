@@ -1,7 +1,6 @@
 package com.application.employeehr.client.request;
 
 import com.application.employeehr.client.response.AddressDto;
-import com.application.employeehr.model.Address;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
@@ -44,7 +43,5 @@ public class CreateEmployeeRequest {
     private Integer level;
 
     private AddressDto address;
-    //    @Size(min = 10, max = 200, message
-//            = "Address must be between 10 and 200 characters")
-//    private String address;
+
 }

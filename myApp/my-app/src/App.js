@@ -20,10 +20,6 @@ export default class App extends Component {
         <ShowExpenses/>
        
         
-      {/* <Employee/> */}
-       
-{/*        
-       <Table deleteclicked={this.showDeletePopup} data={this.state.userData} editclicked={this.onEditClick} /> */}
     
     </div>
     )

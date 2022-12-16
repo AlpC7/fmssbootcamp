@@ -24,7 +24,7 @@ export default class ShowEmployeeTable extends Component {
     }
     
     componentDidMount() {
-        fetch("/api/v1/employees/")       //https://raw.githubusercontent.com/aspsnippets/test/master/Customers.json
+        fetch("/api/v1/employees/")       
         .then(res => res.json())
         .then(
             (employees) => {
@@ -36,15 +36,7 @@ export default class ShowEmployeeTable extends Component {
         )
         
     }
-    handleClick = (id)=>{ 
-        debugger
-        // this.state.employees.forEach(employee => {
-        //    if(employee.id == id){
-        //      this.setState({newCar : product})
-        //    }
-        //  })
-        }  
-
+  
     Trigger = (info) => {
            
             employeeToAnotherPage = info;
@@ -57,15 +49,11 @@ export default class ShowEmployeeTable extends Component {
             .then(alert("Deleted"));
             
     }
-    // .then(() => this.setState({ status: 'Delete successful' }))
 
     
   render() {
     return (
         <>
-    {/* <Button onClick={() => {
-  this.componentDidMount();
-  }}> Calisanlari Goster</Button> */}
     
     <Table bordered
   dark

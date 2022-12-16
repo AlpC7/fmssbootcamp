@@ -135,8 +135,6 @@ async sendLeave(postdata) {
           </Row>
           <Row>
       <Col><Button block color="primary" outline onClick={this.setAllLeave}>  Save </Button></Col>
-      {/* <Col><Button block color="primary" outline onClick={()=> alert("Güncellendi!")}>  Güncelle </Button></Col>
-      <Col><Button block color="primary" outline onClick={()=> alert("Silindi!")}>  Sil </Button></Col> */}
     </Row>
         </Form>
       </div>
