@@ -1,7 +1,7 @@
-# HR App
-# Getting Started
+## HR App
+## Getting Started
  employeehr - Backend
- myApp - Frontend
+--  myApp - Frontend
  
-#Contact
+## Contact
 Project Link : [https://github.com/AlpC7/fmssbootcamp/tree/master](https://github.com/AlpC7/fmssbootcamp/tree/master)
